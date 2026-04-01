@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>보건의료정보관리사 국가고시 핵심요약 | 개인정보·건강정보·AI 윤리·국제규범</title>
+  <meta name="description" content="보건의료정보관리사 국가고시 대비 핵심요약. 개인정보와 건강정보, AI 및 정보윤리, OECD·UN·GDPR 국제규범을 한 번에 정리한 GitHub 업로드용 HTML 자료." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">보건의료정보관리사 국가고시 대비</p>
+      <h1>90% 이상 득점을 목표로 한<br />핵심 암기 요약</h1>
+      <p class="hero-desc">
+        범위: <strong>개인정보·건강정보의 개념</strong>, <strong>AI 및 정보 관련 윤리</strong>, <strong>국제적 규범 및 체제</strong><br />
+        전략: <strong>정의 → 비교 → 숫자 암기 → 사례 적용</strong>
+      </p>
+      <div class="hero-badges">
+        <span>개념 정리</span>
+        <span>빈출 숫자 암기</span>
+        <span>국시형 포인트</span>
+        <span>사례형 대응</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main-layout">
+    <aside class="toc">
+      <h2>목차</h2>
+      <nav>
+        <a href="#s1">1. 개인정보 기본 개념</a>
+        <a href="#s2">2. 건강정보 핵심 정리</a>
+        <a href="#s3">3. 프라이버시와 환자 권리</a>
+        <a href="#s4">4. 법 체계와 정보주체 권리</a>
+        <a href="#s5">5. AI 윤리·편향·책임</a>
+        <a href="#s6">6. 개인정보 생명주기</a>
+        <a href="#s7">7. AI 역기능</a>
+        <a href="#s8">8. OECD Privacy 8원칙</a>
+        <a href="#s9">9. OECD Security 9원칙</a>
+        <a href="#s10">10. UN 가이드라인</a>
+        <a href="#s11">11. GDPR 핵심 정리</a>
+        <a href="#s12">12. 초고속 암기표</a>
+        <a href="#s13">13. 시험 직전 체크</a>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <section class="card intro-card">
+        <h2>이 자료 보는 법</h2>
+        <ul class="check-list">
+          <li><strong>숫자</strong>는 그대로 외운다: 4요건, 3대 측면, 7대 원칙, 8원칙, 9원칙, 8가지 권리.</li>
+          <li><strong>유사 개념</strong>은 비교로 외운다: Privacy vs Security vs Confidentiality / 가명처리 vs 익명처리 / OECD vs UN vs GDPR.</li>
+          <li><strong>사례형</strong>은 “이 권리/원칙이 무엇인지”로 연결한다.</li>
+          <li><strong>시험 포인트</strong>는 굵게 표시했다.</li>
+        </ul>
+      </section>
+
+      <section id="s1" class="card">
+        <h2>1. 개인정보 기본 개념</h2>
+        <div class="grid two">
+          <div>
+            <h3>개인정보의 정의</h3>
+            <p>
+              <strong>살아있는 개인에 관한 정보</strong>로서, 성명·주민등록번호·영상 등으로 개인을 알아볼 수 있는 정보,
+              또는 다른 정보와 <strong>쉽게 결합하여</strong> 특정 개인을 알아볼 수 있는 정보.
+            </p>
+          </div>
+          <div class="memory-box">
+            <h3>4대 핵심 요건 암기</h3>
+            <ol>
+              <li><strong>살</strong>아있는 개인</li>
+              <li><strong>특</strong>정개인 관련성</li>
+              <li><strong>식</strong>별 가능성</li>
+              <li><strong>임</strong>의성</li>
+            </ol>
+            <p class="mnemonic">암기어: <strong>살·특·식·임</strong></p>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>요건</th>
+              <th>의미</th>
+              <th>국시형 포인트</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>살아있는 개인</td>
+              <td>생존 자연인에 관한 정보</td>
+              <td>사망자는 원칙적으로 개인정보보호법 대상 제외, 단 의료법상 기록 보호는 가능</td>
+            </tr>
+            <tr>
+              <td>특정개인 관련성</td>
+              <td>특정 개인과 연결되는 정보</td>
+              <td>순수 통계자료는 개인과 연결되지 않으면 제외</td>
+            </tr>
+            <tr>
+              <td>식별 가능성</td>
+              <td>직접 또는 결합으로 개인 식별 가능</td>
+              <td>이름이 없어도 병실번호+수술일자 등 결합하면 개인정보 가능</td>
+            </tr>
+            <tr>
+              <td>정보의 임의성</td>
+              <td>형태 제한 없음</td>
+              <td>전자문서, 종이, 영상, 음성, 생체정보 모두 포함</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="alert">
+          <strong>함정 포인트:</strong> 개인정보의 4가지 요건에 <strong>공익성</strong>은 포함되지 않는다.
+        </div>
+      </section>
+
+      <section id="s2" class="card">
+        <h2>2. 건강정보 핵심 정리</h2>
+        <p>
+          <strong>건강정보는 개인정보의 특수한 민감정보</strong>이다. 즉, 모든 건강정보는 개인정보 요건을 충족하며,
+          일반 개인정보보다 더 강한 보호가 요구된다.
+        </p>
+
+        <div class="grid three">
+          <div class="mini-card">
+            <h3>기본정보</h3>
+            <p>성명, 연령, 생년월일, 주소, 연락처</p>
+          </div>
+          <div class="mini-card">
+            <h3>진료기록정보</h3>
+            <p>진단명, 처방, 수술기록, 검사결과, 투약이력</p>
+          </div>
+          <div class="mini-card">
+            <h3>보험·복지정보</h3>
+            <p>건강보험, 장애 관련 정보, 복지 연계 정보</p>
+          </div>
+        </div>
+
+        <h3>건강정보의 특수성 6가지</h3>
+        <div class="grid three">
+          <div class="mini-card emphasis"><strong>극도의 민감성</strong><p>노출 시 사회적·경제적 불이익 발생</p></div>
+          <div class="mini-card emphasis"><strong>영속성</strong><p>질병 이력·유전정보는 시간이 지나도 의미 유지</p></div>
+          <div class="mini-card emphasis"><strong>가족 파급성</strong><p>유전체 정보는 가족에게도 영향</p></div>
+          <div class="mini-card emphasis"><strong>진단 정확성 요구</strong><p>오류는 의료사고와 직결</p></div>
+          <div class="mini-card emphasis"><strong>다중 주체 관여</strong><p>환자·의사·간호사·병원·보험사·공공기관 관여</p></div>
+          <div class="mini-card emphasis"><strong>AI 활용 확대</strong><p>보호와 활용의 균형이 중요</p></div>
+        </div>
+
+        <div class="alert">
+          <strong>빈출 오답:</strong> “시간이 지나면 질병 이력은 보호 필요성이 거의 없어진다”는 틀린 설명이다.
+          건강정보는 <strong>영속성</strong>이 핵심이다.
+        </div>
+      </section>
+
+      <section id="s3" class="card">
+        <h2>3. 프라이버시와 환자 권리</h2>
+        <p>
+          프라이버시란 <strong>자신의 정보를 스스로 통제할 수 있는 권리</strong>이다.
+        </p>
+
+        <div class="grid four">
+          <div class="mini-card"><strong>동의권</strong><p>수집·이용·제공에 사전 동의 또는 거부</p></div>
+          <div class="mini-card"><strong>접근권한</strong><p>열람권·사본교부권</p></div>
+          <div class="mini-card"><strong>정정청구권</strong><p>오류 수정 요구</p></div>
+          <div class="mini-card"><strong>삭제청구권</strong><p>보유 목적 소멸 시 삭제 요구</p></div>
+        </div>
+
+        <h3>프라이버시 3대 차원</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>의미</th>
+              <th>의료 맥락</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>정보 프라이버시</td>
+              <td>정보 수집·처리·공유 통제</td>
+              <td>의료정보보호에서 가장 중요</td>
+            </tr>
+            <tr>
+              <td>신체 프라이버시</td>
+              <td>신체 검사·처치에 대한 자기결정</td>
+              <td>동의의 법적 근거</td>
+            </tr>
+            <tr>
+              <td>공간적 프라이버시</td>
+              <td>진료실·병실의 사생활 보호</td>
+              <td>CCTV, 관찰 제한</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tip-box">
+          <strong>국시 연결:</strong> “진료기록 사본 발급”은 <strong>접근권한(열람권·사본교부권)</strong>에 해당한다.
+        </div>
+      </section>
+
+      <section id="s4" class="card">
+        <h2>4. 법 체계와 정보주체 권리</h2>
+        <div class="grid two">
+          <div>
+            <h3>법 체계</h3>
+            <ul>
+              <li><strong>개인정보 보호법</strong>: 일반법</li>
+              <li><strong>의료법</strong>: 의료정보 관련 특별법</li>
+              <li><strong>보건의료기본법</strong>: 자기결정권, 알 권리, 비밀보호</li>
+            </ul>
+            <p><strong>원칙:</strong> 특별법 우선 → 의료 분야는 <strong>의료법 우선</strong></p>
+          </div>
+          <div>
+            <h3>개인정보 처리의 7대 원칙</h3>
+            <ol>
+              <li>목적 명확성</li>
+              <li>목적 제한성</li>
+              <li>최소 수집</li>
+              <li>정확성</li>
+              <li>안전성</li>
+              <li>공개성</li>
+              <li>자기결정권 존중</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>환자의 실무상 핵심 권리</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>권리</th>
+              <th>실무 포인트</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>열람권</td>
+              <td>환자 요청 시 <strong>30일 이내</strong> 열람 허용</td>
+            </tr>
+            <tr>
+              <td>사본교부권</td>
+              <td>정당한 사유 없이 거부 불가, 비용 청구 가능</td>
+            </tr>
+            <tr>
+              <td>수정 요청권</td>
+              <td><strong>30일 이내</strong> 처리, 거부 시 사유 통보</td>
+            </tr>
+            <tr>
+              <td>제3자 제공 내역 열람권</td>
+              <td><strong>3년간</strong> 제공 내역 보관 및 열람 허용</td>
+            </tr>
+            <tr>
+              <td>동의 철회권</td>
+              <td>철회 즉시 처리 중단 및 파기 원칙</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="s5" class="card">
+        <h2>5. AI 윤리·편향·책임</h2>
+        <div class="grid two">
+          <div>
+            <h3>AI 환각</h3>
+            <p>
+              <strong>사실이 아닌 내용을 사실처럼 자신 있게 생성</strong>하는 현상.
+              의료 분야에서는 잘못된 진단·처방 정보로 이어질 수 있어 위험하다.
+            </p>
+          </div>
+          <div>
+            <h3>AI 윤리기준 3대 기본원칙</h3>
+            <ol>
+              <li>인간의 존엄성</li>
+              <li>사회의 공공선</li>
+              <li>기술의 합목적성</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>AI 편향 원인 8가지</h3>
+        <div class="grid four compact">
+          <div class="mini-card">알고리즘 편향</div>
+          <div class="mini-card">인지 편향</div>
+          <div class="mini-card">확증 편향</div>
+          <div class="mini-card">제외 편향</div>
+          <div class="mini-card">측정 편향</div>
+          <div class="mini-card">집단 동질성 편향</div>
+          <div class="mini-card">편견 편향</div>
+          <div class="mini-card">고정관념 편향</div>
+        </div>
+
+        <div class="tip-box">
+          <strong>자주 나오는 적용:</strong> 졸업생만 넣고 중도탈락자를 빼면 <strong>측정 편향</strong>으로 본다.
+        </div>
+
+        <h3>AI 법적 책임</h3>
+        <p>
+          <strong>AI는 권리능력이 없으므로 현행법상 독립적인 민·형사상 책임 주체가 아니다.</strong>
+          따라서 의료 AI 사고의 책임은 의료기관, 의료인, 개발자·기업에게 나뉠 수 있다.
+        </p>
+      </section>
+
+      <section id="s6" class="card">
+        <h2>6. 개인정보 생명주기</h2>
+        <div class="lifecycle">
+          <span>수집</span>
+          <span>보유</span>
+          <span>이용</span>
+          <span>제공</span>
+          <span>파기</span>
+        </div>
+        <p class="center-note"><strong>정답 암기:</strong> 수집 → 보유 → 이용 → 제공 → 파기</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>단계</th>
+              <th>핵심 위험</th>
+              <th>대응 포인트</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>수집</td>
+              <td>직접 입력하지 않은 파생·결합 정보까지 수집 가능</td>
+              <td>동의 명확화, 최소 수집</td>
+            </tr>
+            <tr>
+              <td>보유</td>
+              <td>대규모·복잡한 저장환경</td>
+              <td>암호화, 강력한 접근통제</td>
+            </tr>
+            <tr>
+              <td>이용</td>
+              <td>민감정보 재식별, 목적 외 이용</td>
+              <td>비식별화, 재식별 방지</td>
+            </tr>
+            <tr>
+              <td>제공</td>
+              <td>타 플랫폼·타사와 연계 확대</td>
+              <td>제공 동의 명확화</td>
+            </tr>
+            <tr>
+              <td>파기</td>
+              <td>연쇄된 데이터까지 완전 삭제 어려움</td>
+              <td>설계 단계부터 파기 고려</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Privacy by Design 핵심 3개만 확실히</h3>
+        <div class="grid three">
+          <div class="mini-card emphasis"><strong>① 사전 예방</strong></div>
+          <div class="mini-card emphasis"><strong>② 기본 설정값</strong></div>
+          <div class="mini-card emphasis"><strong>⑦ 사용자 중심</strong></div>
+        </div>
+      </section>
+
+      <section id="s7" class="card">
+        <h2>7. AI 역기능</h2>
+        <div class="grid four">
+          <div class="mini-card"><strong>딥페이크</strong><p>얼굴·신체 합성</p></div>
+          <div class="mini-card"><strong>딥보이스</strong><p>음성 변조·복제</p></div>
+          <div class="mini-card"><strong>AI 피싱</strong><p>피싱·파밍·비싱·스미싱</p></div>
+          <div class="mini-card"><strong>AI 스캠</strong><p>광고·로맨스 스캠</p></div>
+        </div>
+
+        <h3>피싱 4종 구분</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>유형</th>
+              <th>설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>피싱</td>
+              <td>위장된 도메인·링크 접속 유도로 개인정보 탈취</td>
+            </tr>
+            <tr>
+              <td>파밍</td>
+              <td>DNS 탈취로 정상 사이트처럼 보이게 함</td>
+            </tr>
+            <tr>
+              <td>비싱</td>
+              <td>인터넷전화 음성으로 금융정보 입력 유도</td>
+            </tr>
+            <tr>
+              <td>스미싱</td>
+              <td>문자메시지 악성 URL로 스마트폰 통제</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tip-box">
+          <strong>딥보이스 기반 기술:</strong> <strong>TTS(Text to Speech)</strong>
+        </div>
+      </section>
+
+      <section id="s8" class="card">
+        <h2>8. OECD Privacy 8원칙</h2>
+        <div class="grid two">
+          <ol class="number-list">
+            <li><strong>수집제한</strong></li>
+            <li><strong>데이터 정확성</strong></li>
+            <li><strong>목적 특성화</strong></li>
+            <li><strong>이용제한</strong></li>
+          </ol>
+          <ol class="number-list" start="5">
+            <li><strong>비밀보호</strong></li>
+            <li><strong>공개</strong></li>
+            <li><strong>개인참여</strong></li>
+            <li><strong>책임</strong></li>
+          </ol>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>원칙</th>
+              <th>핵심 뜻</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>수집제한</td><td>적법·공정한 방법, 최소 수집</td></tr>
+            <tr><td>데이터 정확성</td><td>정확·완전·최신성 유지</td></tr>
+            <tr><td>목적 특성화</td><td>수집 당시 목적 특정, 그 목적에만 사용</td></tr>
+            <tr><td>이용제한</td><td>동의·법률 근거 없이 목적 외 이용 금지</td></tr>
+            <tr><td>비밀보호</td><td>불법 공개·수정·손실 방지</td></tr>
+            <tr><td>공개</td><td>정책·운영에 관한 일반적 공개정책</td></tr>
+            <tr><td>개인참여</td><td>확인·이의·삭제·수정·보완 권리</td></tr>
+            <tr><td>책임</td><td>원칙 실현 조치에 대한 관리자 책임</td></tr>
+          </tbody>
+        </table>
+
+        <div class="alert">
+          <strong>자주 헷갈림:</strong> “수집 후 자유로운 목적 변경 허용”은 틀림. <strong>목적 특성화</strong>와 <strong>이용제한</strong>에 위배된다.
+        </div>
+      </section>
+
+      <section id="s9" class="card">
+        <h2>9. OECD Security 9원칙</h2>
+        <p>의료기관에서는 특히 랜섬웨어, 패치 미적용, 대응 절차 부재 사례와 연결해 출제되기 쉽다.</p>
+
+        <div class="grid three compact">
+          <div class="mini-card">① 인식</div>
+          <div class="mini-card">② 책임</div>
+          <div class="mini-card">③ 대응</div>
+          <div class="mini-card">④ 윤리</div>
+          <div class="mini-card">⑤ 민주성</div>
+          <div class="mini-card">⑥ 위험평가</div>
+          <div class="mini-card">⑦ 설계와 이행</div>
+          <div class="mini-card">⑧ 정보보안관리</div>
+          <div class="mini-card">⑨ 재평가</div>
+        </div>
+
+        <div class="tip-box">
+          <strong>뒤셀도르프 대학병원 랜섬웨어 사건 연결:</strong>
+          <strong>인식</strong>, <strong>대응</strong>, <strong>위험평가</strong>, <strong>재평가</strong>가 핵심.
+        </div>
+      </section>
+
+      <section id="s10" class="card">
+        <h2>10. UN 가이드라인</h2>
+        <p>
+          OECD와 유사한 틀을 가지지만, <strong>인권적 관점</strong>과 <strong>국가 권력 제한</strong>을 더 강하게 반영한다.
+        </p>
+
+        <h3>UN에서 특히 추가된 핵심 3가지</h3>
+        <div class="grid three">
+          <div class="mini-card emphasis"><strong>차별 배제</strong></div>
+          <div class="mini-card emphasis"><strong>예외 인정권</strong></div>
+          <div class="mini-card emphasis"><strong>감독과 제재</strong></div>
+        </div>
+
+        <h3>예외 인정권 조건</h3>
+        <ol>
+          <li><strong>국내법에 명시</strong></li>
+          <li><strong>목적이 명확</strong></li>
+          <li><strong>필요한 최소 범위</strong>여야 함 (비례 원칙)</li>
+        </ol>
+
+        <div class="alert">
+          <strong>함정 포인트:</strong> <strong>데이터이동권</strong>은 UN 추가 핵심이 아니라 <strong>GDPR의 권리</strong>다.
+        </div>
+      </section>
+
+      <section id="s11" class="card">
+        <h2>11. GDPR 핵심 정리</h2>
+        <div class="grid two">
+          <div>
+            <h3>핵심 특징</h3>
+            <ul>
+              <li><strong>2018년 5월 시행</strong></li>
+              <li><strong>역외 적용</strong></li>
+              <li><strong>강력한 제재</strong>: 전 세계 연매출 4% 또는 2,000만 유로</li>
+            </ul>
+          </div>
+          <div>
+            <h3>열람요청권 포인트</h3>
+            <ul>
+              <li><strong>1개월 이내</strong> 무료 응답</li>
+              <li><strong>접근 로그</strong> 제공까지 요구 가능</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>GDPR 8가지 권리</h3>
+        <div class="grid four compact">
+          <div class="mini-card">① 정보제공</div>
+          <div class="mini-card">② 열람요청</div>
+          <div class="mini-card">③ 정정요청</div>
+          <div class="mini-card">④ 삭제요청</div>
+          <div class="mini-card">⑤ 처리제한</div>
+          <div class="mini-card">⑥ 데이터이동</div>
+          <div class="mini-card">⑦ 처리거부</div>
+          <div class="mini-card">⑧ 자동결정거부</div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>사례</th>
+              <th>적용 권리</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>“내 정보를 왜 수집하는지 알려달라”</td>
+              <td>정보제공 받을 권리</td>
+            </tr>
+            <tr>
+              <td>“내 진료기록과 누가 열람했는지 보여달라”</td>
+              <td>열람요청 권리</td>
+            </tr>
+            <tr>
+              <td>“알레르기 정보가 틀렸으니 고쳐달라”</td>
+              <td>정정요청 권리</td>
+            </tr>
+            <tr>
+              <td>“연구에 내 정보 쓰지 말아달라”</td>
+              <td>처리거부요청 권리</td>
+            </tr>
+            <tr>
+              <td>“AI 판정에 동의하지 않는다. 사람이 다시 판단해달라”</td>
+              <td>자동 프로파일링 거부 권리</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="s12" class="card rapid-review">
+        <h2>12. 초고속 암기표</h2>
+        <div class="rapid-grid">
+          <div><strong>개인정보 4요건</strong><span>살·특·식·임</span></div>
+          <div><strong>건강정보 특수성</strong><span>민감성·영속성·가족파급성·정확성·다중주체·AI활용</span></div>
+          <div><strong>프라이버시 권리</strong><span>동의·접근·정정·삭제</span></div>
+          <div><strong>의료정보 3대 측면</strong><span>Privacy / Security / Confidentiality</span></div>
+          <div><strong>법 체계</strong><span>개인정보보호법(일반법) + 의료법(특별법 우선)</span></div>
+          <div><strong>생명주기</strong><span>수집→보유→이용→제공→파기</span></div>
+          <div><strong>AI 윤리 3원칙</strong><span>인간의 존엄성·사회의 공공선·기술의 합목적성</span></div>
+          <div><strong>AI 책임</strong><span>AI는 독립적 책임 주체 아님</span></div>
+          <div><strong>피싱 4종</strong><span>피싱·파밍·비싱·스미싱</span></div>
+          <div><strong>딥보이스</strong><span>TTS 기반</span></div>
+          <div><strong>OECD Privacy</strong><span>8원칙</span></div>
+          <div><strong>OECD Security</strong><span>9원칙</span></div>
+          <div><strong>UN 추가 핵심</strong><span>차별 배제·예외 인정권·감독과 제재</span></div>
+          <div><strong>GDPR</strong><span>8가지 권리 / 1개월 / 접근 로그 / 연매출 4%</span></div>
+        </div>
+      </section>
+
+      <section id="s13" class="card">
+        <h2>13. 시험 직전 체크리스트</h2>
+        <ol class="final-list">
+          <li>개인정보 4요건을 순서대로 말할 수 있는가?</li>
+          <li>건강정보의 특수성 6가지를 설명할 수 있는가?</li>
+          <li>진료기록 사본 발급 = 접근권한이라고 바로 연결되는가?</li>
+          <li>Privacy / Security / Confidentiality 차이를 구분할 수 있는가?</li>
+          <li>특별법 우선 → 의료 분야는 의료법 우선이라고 기억하는가?</li>
+          <li>AI 환각, AI 편향, AI 책임을 각각 한 줄로 설명할 수 있는가?</li>
+          <li>생명주기 순서를 틀리지 않는가?</li>
+          <li>피싱·파밍·비싱·스미싱을 구분할 수 있는가?</li>
+          <li>OECD Privacy 8원칙과 UN 추가 3원칙을 구별할 수 있는가?</li>
+          <li>GDPR 8가지 권리와 “1개월, 접근 로그, 자동결정거부”를 기억하는가?</li>
+        </ol>
+
+        <div class="success-box">
+          <strong>추천 학습법:</strong> 이 페이지를 3번 읽고, 마지막에는 목차만 보고 각 개념을 소리 내어 설명하면
+          제시된 20문항은 대부분 안정적으로 맞출 수 있다.
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>GitHub 업로드용 학습자료 · index.html / styles.css 구조</p>
+    </div>
+  </footer>
+</body>
+</html>
