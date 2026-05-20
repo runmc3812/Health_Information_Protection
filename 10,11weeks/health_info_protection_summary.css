@@ -1,0 +1,390 @@
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --ink: #1f2937;
+  --muted: #5f6b7a;
+  --primary: #2f80ed;
+  --primary-dark: #1f5fbf;
+  --soft-blue: #eaf4ff;
+  --soft-green: #edf9f2;
+  --soft-red: #fff1f1;
+  --soft-yellow: #fff8e5;
+  --border: #d9e2ec;
+  --shadow: 0 8px 24px rgba(20, 40, 80, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+.hero {
+  padding: 56px 24px 44px;
+  text-align: center;
+  background: linear-gradient(135deg, #dff0ff 0%, #eff7ff 48%, #f7fbff 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero__label {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ffffffcc;
+  color: var(--primary-dark);
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #c7dcf5;
+}
+
+.hero h1 {
+  margin: 18px 0 8px;
+  font-size: clamp(32px, 5vw, 50px);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.hero__badges span {
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  color: #364152;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 32px auto 56px;
+}
+
+.study-guide,
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.study-guide {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 27px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #172033;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #1d2b45;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+ol,
+ul {
+  margin-top: 8px;
+  padding-left: 22px;
+}
+
+li + li {
+  margin-top: 4px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mini-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #fbfdff;
+  border: 1px solid var(--border);
+}
+
+.soft-blue {
+  background: var(--soft-blue);
+}
+
+.soft-red {
+  background: var(--soft-red);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 18px;
+  margin: 14px 0 16px;
+  font-size: 15.5px;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  vertical-align: top;
+}
+
+th {
+  background: #eef6ff;
+  color: #173b65;
+  font-weight: 800;
+  text-align: left;
+}
+
+td:first-child {
+  font-weight: 700;
+  color: #1f3b59;
+  width: 20%;
+}
+
+.exam-tip,
+.note {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid #d9e8ff;
+  background: #f3f8ff;
+  color: #24405f;
+}
+
+.note {
+  background: var(--soft-yellow);
+  border-color: #f4df9f;
+  color: #5c4a16;
+}
+
+.flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.flow div {
+  position: relative;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--soft-green);
+  border: 1px solid #caead8;
+}
+
+.flow div:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2b8a57;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.flow strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.flow span {
+  display: block;
+  color: #426252;
+  font-size: 14.5px;
+}
+
+.definition-list {
+  display: grid;
+  gap: 14px;
+}
+
+.definition-list div {
+  padding: 18px 20px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: #fbfdff;
+}
+
+.definition-list p {
+  color: var(--muted);
+}
+
+.criteria article {
+  border: 1px solid #cfe0f5;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+  padding: 22px;
+}
+
+.criteria .number {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.criteria p {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.criteria span {
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.timeline div {
+  padding: 18px 20px;
+  border-left: 6px solid var(--primary);
+  border-radius: 16px;
+  background: #f7fbff;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.checklist {
+  display: grid;
+  gap: 10px;
+}
+
+.checklist label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fbfdff;
+}
+
+.checklist input {
+  margin-top: 6px;
+  width: 18px;
+  height: 18px;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px 20px 48px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+@media (max-width: 900px) {
+  .grid.two,
+  .grid.three,
+  .flow {
+    grid-template-columns: 1fr;
+  }
+
+  .flow div:not(:last-child)::after {
+    content: "↓";
+    right: 50%;
+    top: auto;
+    bottom: -18px;
+    transform: translateX(50%);
+  }
+
+  .container {
+    width: min(100% - 20px, 1120px);
+  }
+
+  .study-guide,
+  .card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .hero {
+    padding: 24px 16px;
+    background: #fff;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .study-guide,
+  .card {
+    box-shadow: none;
+    border-color: #bbb;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .hero__badges,
+  .footer {
+    display: none;
+  }
+}
